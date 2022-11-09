@@ -1,0 +1,454 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #3a3a3a;
+}
+
+.header {
+    width: 100%;
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    border-bottom: 3px black solid;
+}
+
+.home-button {
+    /* Position and Size */
+    display: block;
+    width: 400px;
+    padding: 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2rem;
+
+    /* Design */
+    border-radius: 10px;
+    border-style: none;
+    background-color: #FFFFFF;
+}
+
+.home-button:hover {
+    background-color: #DADADA;
+    cursor: pointer;
+}
+
+.party-section {
+    margin-top: 20px;
+}
+
+.party-label {
+    /* Position and Size */
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    font-size: 2rem;
+
+    /* Design */
+    border-radius: 10px;
+    color: white;
+}
+
+.party-input {
+    /* Position and Size */
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 400px;
+    font-size: 2rem;
+
+    /* Design */
+    border-radius: 10px;
+}
+
+.party-button {
+    /* Position and Size */
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 400px;
+    font-size: 2rem;
+
+    /* Design */
+    background-color: #ffffff;
+    border-radius: 20px;
+    border-style: none;
+}
+
+.party-button:hover {
+    background-color: #DADADA;
+    cursor: pointer;
+}
+
+.error-text {
+    color: red;
+
+}
+
+.back-button {
+    /* Position and Size */
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    width: 400px;
+    font-size: 2rem;
+
+    /* Design */
+    background-color: #ffffff;
+    border-radius: 20px;
+    border-style: none;
+}
+
+.back-button:hover {
+    background-color: #DADADA;
+    cursor: pointer;
+}
+
+.role-header {
+    width: 100%;
+    background-color: #222222;
+    border-bottom: 3px black solid;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+.phase-header {
+    width: 100%;
+    background-color: #222222;
+    border-bottom: 3px black solid;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+}
+
+.current-phase {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    text-align: center;
+}
+
+.current-day {
+    position: absolute;
+    left: 1%;
+}
+
+.current-timer {
+    position: absolute;
+    right: 1%;
+}
+
+.start-button {
+    /* Position and Size */
+    display: block;
+    width: 400px;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Design */
+    background-color: #40BA6B;
+    border-radius: 20px;
+    border-style: none;
+}
+
+.start-button:hover {
+    background-color: #369657;
+    cursor: pointer;
+}
+
+.info-header {
+    width: 100%;
+    background-color: #222222;
+    border-bottom: 3px black solid;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+}
+
+.info {
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+}
+
+.info-option {
+    /* Position and Size */
+    display: block;
+    width: 100px;
+    padding: 5px;
+    font-size: 1rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: right;
+    margin-right: 10px;
+
+    /* Design */
+    background-color: #d8d8d8;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.info-option:hover {
+    background-color: #a9a9a9;
+    cursor: pointer;
+}
+
+.x-button:hover {
+    cursor: pointer;
+}
+
+.notes {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    background-color: #f8f8f8;
+}
+
+.logs {
+    width: 100%;
+    background-color: #2c0154;
+    color: white;
+    font-size: 1.2rem;
+    max-height: 100%;
+    overflow: auto
+}
+
+.log {
+    padding: 5px;
+    border-bottom: 2px  solid black;
+}
+
+.demonChat {
+    width: 100%;
+    color: white;
+    background-color: #790000;
+}
+
+.demonChatMsg {
+    font-size: 1.2rem;
+    padding: 5px;
+    background-color: #4f0000;
+    border-bottom: 3px  solid black;
+}
+
+.demonChatSend{
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.demonChatInput {
+    width: 80%;
+    font-size: 1.5rem;
+}
+
+.demonChatSubmit {
+    width: 15%;
+    height: 100%;
+    font-size: 1.5rem;
+    margin-left: 5px;
+    padding: 2px;
+
+    border-style: none;
+    border-radius: 5px;
+}
+
+.player-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.5rem;
+    background-color: #1D1D1D;
+    border-bottom: 2px solid black
+}
+
+.player {
+    padding-left: 10px;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.player-demon {
+    color: red;
+}
+
+.player-dead {
+    color: #7d7d7d;
+}
+
+.player-card-selected {
+    background-color: #369657;
+}
+
+.player-card-dead {
+    background-color: #424242;
+}
+
+
+.action-button {
+    width: 100px;
+    padding: 2px;
+    font-size: 1rem;
+    position: absolute;
+    right: 20px;
+
+    background-color: #d8d8d8;
+    border-radius: 10px;
+    border-style: none;
+
+}
+
+.action-button:hover {
+    cursor: pointer;
+    background-color: #a9a9a9;
+}
+
+.vote-count {
+    position: absolute;
+    font-size: 1rem;
+    right: 150px;
+}
+
+.defense {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+
+    background-color: #aeaeae;
+    outline: 5px black solid;
+}
+
+.defense-text {
+    font-size: 3rem;
+    color: #000000;
+    display: block;
+}
+
+.defense-subtext {
+    font-size: 1.5rem;
+    color: #000000;
+    display: block;
+}
+
+.defense-vote {
+    border-radius: 10px;
+    width: 100px;
+    padding: 10px;
+    font-size: 2rem;
+    margin: 5px;
+}
+
+.defense-vote:hover {
+    cursor: pointer;
+}
+
+.yes-button {
+    background-color: #22fd00;
+}
+
+.yes-button:hover {
+    background-color: #149800;
+}
+
+.no-button {
+    background-color: #ff0000;
+}
+
+.no-button:hover {
+    background-color: #7a0000;
+}
+
+.game-over {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+
+    background-color: #aeaeae;
+    outline: 5px black solid;
+}
+
+.team-winner {
+    display: block;
+    font-size: 3rem;
+}
+
+.player-winners {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.new-game-button {
+    border-radius: 5px;
+    border-style: none;
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 200px;
+
+    background-color: #00c01d;
+}
+
+.new-game-button:hover {
+    cursor: pointer;
+    background-color: #149600;
+}
+
+.tutorial {
+    color: #ffffff;
+}
+
+.tutorial-header {
+    margin: 20px;
+    font-size: 3rem;
+}
+
+.tutorial-section {
+    margin: 20px;
+}
+
+.tutorial-section h2{
+    font-size: 2rem;
+}
+
+.tutorial-section p {
+    margin-bottom: 10px;
+}
