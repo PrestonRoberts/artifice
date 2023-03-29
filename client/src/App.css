@@ -9,7 +9,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 html, body {
     max-width: 100%;
-    overflow-x: hidden;
 }
 
 body {
@@ -29,17 +28,19 @@ body {
 .home-button {
     /* Position and Size */
     display: block;
-    width: 400px;
     padding: 30px;
     margin: 0 auto;
     margin-top: 20px;
     text-align: center;
     font-size: 2rem;
+    width: 400px;
+    max-width: 90%;
 
     /* Design */
     border-radius: 10px;
     border-style: none;
     background-color: #FFFFFF;
+    color: #000000;
 }
 
 .home-button:hover {
@@ -49,6 +50,7 @@ body {
 
 .party-section {
     margin-top: 20px;
+    max-width: 90%;
 }
 
 .party-label {
@@ -56,6 +58,7 @@ body {
     display: block;
     margin: 0 auto;
     width: 400px;
+    max-width: 90%;
     font-size: 2rem;
 
     /* Design */
@@ -69,6 +72,7 @@ body {
     margin: 0 auto;
     margin-bottom: 20px;
     width: 400px;
+    max-width: 90%;
     font-size: 2rem;
 
     /* Design */
@@ -82,10 +86,12 @@ body {
     margin-bottom: 20px;
     padding: 10px;
     width: 400px;
+    max-width: 90%;
     font-size: 2rem;
 
     /* Design */
     background-color: #ffffff;
+    color: #000000;
     border-radius: 20px;
     border-style: none;
 }
@@ -106,10 +112,13 @@ body {
     margin: 0 auto;
     padding: 10px;
     width: 400px;
+    max-width: 90%;
     font-size: 2rem;
+    margin-bottom: 30px;
 
     /* Design */
     background-color: #ffffff;
+    color: #000000;
     border-radius: 20px;
     border-style: none;
 }
@@ -160,6 +169,7 @@ body {
     /* Position and Size */
     display: block;
     width: 400px;
+    max-width: 90%;
     font-size: 2rem;
     position: absolute;
     top: 50%;
@@ -168,6 +178,7 @@ body {
 
     /* Design */
     background-color: #40BA6B;
+    color: #000000;
     border-radius: 20px;
     border-style: none;
 }
@@ -196,7 +207,6 @@ body {
 .info-option {
     /* Position and Size */
     display: block;
-    width: 100px;
     padding: 5px;
     font-size: 1rem;
     position: relative;
@@ -207,6 +217,7 @@ body {
 
     /* Design */
     background-color: #d8d8d8;
+    color: #000000;
     border-radius: 10px;
     border-style: none;
 }
@@ -214,6 +225,11 @@ body {
 .info-option:hover {
     background-color: #a9a9a9;
     cursor: pointer;
+}
+
+.x-button {
+    background-color: #a9a9a9;
+    color: #000000;
 }
 
 .x-button:hover {
@@ -231,6 +247,10 @@ textarea {
     height: 100%;
     font-size: 2rem;
     background-color: #f8f8f8;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .logs {
@@ -288,9 +308,10 @@ textarea {
     display: flex;
     align-items: center;
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 2rem;
     background-color: #1D1D1D;
-    border-bottom: 2px solid black
+    border-bottom: 2px solid black;
+    height: 50px;
 }
 
 .player {
@@ -319,11 +340,12 @@ textarea {
 .action-button {
     width: 100px;
     padding: 2px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     position: absolute;
     right: 20px;
 
     background-color: #d8d8d8;
+    color: #000000;
     border-radius: 10px;
     border-style: none;
 

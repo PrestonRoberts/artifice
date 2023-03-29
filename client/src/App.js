@@ -119,7 +119,7 @@ class App extends Component {
             })
             return
         }
-        let ws = new WebSocket("ws://localhost:8000");
+        let ws = new WebSocket(window.location.origin.replace(/^http/, 'ws'));
 
         this.setState({
             ws: ws

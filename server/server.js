@@ -1,8 +1,16 @@
-const WebSocket = require('ws');
+const express = require('express')
+const path = require('path');
+const exp = require('constants');
+
+const PORT = process.env.PORT || 3000
+const server = express()
+    .use(express.static(path.join(__dirname + "/public")))
+    .listen(PORT)
 
 // Web Socket Server
 // Websocket server to connect to overlay
-const wss = new WebSocket.WebSocketServer({ port: 8000 });
+const { Server } = require('ws');
+const wss = new Server({ server });
 let clients = {};
 let games = {};
 
@@ -475,31 +483,31 @@ function resetVotes(gameID) {
 // New Phase
 const phases = {
     intro: {
-        time: 1,
-        updatePlayers: true
-    },
-    night: {
         time: 10,
         updatePlayers: true
     },
+    night: {
+        time: 30,
+        updatePlayers: true
+    },
     discussion: {
-        time: 2,
+        time: 90,
         updatePlayers: true
     },
     voting: {
-        time: 5,
+        time: 30,
         updatePlayers: false
     },
     defense: {
-        time: 5,
+        time: 30,
         updatePlayers: false
     },
     defenseVote: {
-        time: 5,
+        time: 20,
         updatePlayers: false
     },
     cooldown: {
-        time: 5,
+        time: 10,
         updatePlayers: true
     }
 }
@@ -1082,7 +1090,7 @@ function gameClosed(gameID) {
         let clientID = player.clientID;
         allClients.push(clientID);
 
-        if(clients[clientID].connection.readyState == WebSocket.CLOSED) {
+        if(clients[clientID].connection.readyState == 3) {
             isDisconnected = true;
         }
     }
